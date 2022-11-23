@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+ul{
+    padding: 0;
+    width: 70% auto;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 40px;
+}
+
+.bx{
+    font-size: 50px;
+    color: rgb(31, 30, 30);
+    transition: .5s;
+    line-height: 80px;
+}
+
+.bxl-facebook{
+    color: #4267B2;
+}
+
+.bxl-instagram{
+    color:  #C13584;
+}
+.bxl-twitter{
+    color:  #1DA1F2;
+}
+.bxl-google-plus{
+    color:  #db4a39;
+}
+.bxl-linkedin{
+    color:  #0077B5;
+}
+ul li a{
+    position: relative;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s ease;
+    perspective: 800px;
+    transform: rotate(-30deg) skew(20deg) translate(0, 0);
+    box-shadow:  -25px 25px 10px rgba(20, 19, 19, 0.55);
+}
+
+ul li a::before{
+     content: "";
+     height: 100%;
+     width: 20px;
+     background-color: rgb(189, 182, 182);
+     position: absolute;
+     left: -20px;
+     top: 10px;
+     transform: rotate(0deg) skewY(-45deg);
+}
+
+ul li a::after{
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-color: rgb(199, 197, 197);
+    position: absolute;
+    left: -10px;
+    bottom: -20px;
+    transform: rotate(0deg) skewX(-45deg)
+}
+
+ul li a:hover {
+    transform:rotate(-30deg) skew(20deg) translate(15px,-15px);
+    box-shadow:  -40px 40px 10px rgba(20, 19, 19, 0.55);
+}
+
